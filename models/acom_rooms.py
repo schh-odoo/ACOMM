@@ -31,14 +31,14 @@ class AcomRoomsModel(models.Model):
         for record in self:
             record.maxCap = record.property_id.propEachRoomSharing
 
-    @api.model
-    def create(self,vals):
-        # prop = self.env['acom.rooms.model'].browse(vals['roomNumber'])
-        if(vals['roomNumber'] in self.uniqueRoomNum):
-            raise exceptions.UserError("Room number should be unique")
-        else:
-            self.uniqueRoomNum.append(vals['roomNumber'])
-        return super(AcomRoomsModel,self).create(vals)
+    # @api.model
+    # def create(self,vals):
+    #     # prop = self.env['acom.rooms.model'].browse(vals['roomNumber'])
+    #     if(vals['roomNumber'] in self.uniqueRoomNum):
+    #         raise exceptions.UserError("Room number should be unique")
+    #     else:
+    #         self.uniqueRoomNum.append(vals['roomNumber'])
+    #     return super(AcomRoomsModel,self).create(vals)
 
     # @api.ondelete(at_uninstall=False)
     # def _unlink_if_deleted(self,vals_list):

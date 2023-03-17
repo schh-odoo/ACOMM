@@ -4,34 +4,66 @@
         <field name="name">Sharda Nivaas</field>
         <field name="propAddress">Shreerang apartment, kudasan, gandhinagar</field>
         <field name="propPostcode">12345</field>
-        <field name="propLocation_id" ref="acom_location_1"/>
+        <field name="propLocation_id" ref="acom_location_1" />
         <field name="propFor">boys</field>
         <field name="active">True</field>
         <field name="propRoomsNumber">4</field>
         <field name="propFloors">2</field>
         <field name="propEachRoomSharing">2</field>
+        <field name="propRooms_ids"
+            eval="[Command.create({'roomNumber':'1'}),Command.create({'roomNumber':'2'}),Command.create({'roomNumber':'3'}),Command.create({'roomNumber':'4'})]" />
     </record>
     <record id="acom_property_2" model="acom.property.model">
         <field name="name">London House</field>
         <field name="propAddress">Shiv apartment, Chorpai road, Delhi</field>
         <field name="propPostcode">54321</field>
-        <field name="propLocation_id" ref="acom_location_5"/>
+        <field name="propLocation_id" ref="acom_location_5" />
         <field name="propFor">boys</field>
         <field name="active">True</field>
         <field name="propRoomsNumber">6</field>
         <field name="propFloors">2</field>
         <field name="propEachRoomSharing">3</field>
+        <field name="propRooms_ids"
+            eval="[Command.create({'roomNumber':'1'}),Command.create({'roomNumber':'2'}),Command.create({'roomNumber':'3'}),Command.create({'roomNumber':'4'}),Command.create({'roomNumber':'5'}),Command.create({'roomNumber':'6'})]" />
     </record>
     <record id="acom_property_3" model="acom.property.model">
         <field name="name">Hancock House</field>
         <field name="propAddress">KK nagar apartment 2, sabarmati, Ahmedabad</field>
         <field name="propPostcode">121212</field>
-        <field name="propLocation_id" ref="acom_location_0"/>
+        <field name="propLocation_id" ref="acom_location_0" />
         <field name="propFor">girls</field>
         <field name="active">True</field>
         <field name="propRoomsNumber">6</field>
         <field name="propFloors">2</field>
         <field name="propEachRoomSharing">2</field>
+        <field name="propRooms_ids"
+            eval="[Command.create({'roomNumber':'1'}),Command.create({'roomNumber':'2'}),Command.create({'roomNumber':'3'}),Command.create({'roomNumber':'4'}),Command.create({'roomNumber':'5'}),Command.create({'roomNumber':'6'})]" />
     </record>
-    
+    <record id="acom_tenant_1" model="acom.tenant.model">
+        <field name="name">QWER UIOP</field>
+        <field name="contact">1234567890</field>
+        <field name="gender">male</field>
+        <field name="birthdate">2002-09-04</field>
+        <field name="dateOfJoining">2020-09-04</field>
+        <field name="rent">30000</field>
+        <field name="propAllocated_id" ref="acom_property_2" />
+    </record>
+    <record id="acom_tenant_2" model="acom.tenant.model">
+        <field name="name">ASDFG ASDF</field>
+        <field name="contact">1234567890</field>
+        <field name="gender">female</field>
+        <field name="birthdate">2002-03-06</field>
+        <field name="dateOfJoining">2020-09-04</field>
+        <field name="rent">30000</field>
+        <field name="propAllocated_id" ref="acom_property_1" />
+    </record>
+    <record id="acom_tenant_3" model="acom.tenant.model">
+        <field name="name">ZXCV VCZX</field>
+        <field name="contact">1234567890</field>
+        <field name="gender">male</field>
+        <field name="birthdate">2002-04-02</field>
+        <field name="dateOfJoining">2020-09-04</field>
+        <field name="rent">30000</field>
+        <field name="propAllocated_id" ref="acom_property_3" />
+    </record>
 </odoo>
