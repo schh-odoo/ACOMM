@@ -17,5 +17,8 @@
         'views/acom_tenant_view.xml',
         'views/acom_menu.xml',
         'data/master_data.xml'
+    ],
+    'demo':[
+        'demo/demo_data.xml'
     ]
 }

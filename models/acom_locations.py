@@ -6,3 +6,4 @@ class AcomLocationsModel(models.Model):
     _rec_name="acom_locations"
 
     acom_locations = fields.Char(string="Location")
+    acomProp_ids = fields.One2many("acom.property.model",'propLocation_id')

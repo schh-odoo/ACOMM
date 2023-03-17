@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="acom_property_1" model="acom.property.model">
+        <field name="name">Sharda Nivaas</field>
+        <field name="propAddress">Shreerang apartment, kudasan, gandhinagar</field>
+        <field name="propPostcode">12345</field>
+        <field name="propLocation_id" ref="acom_location_1"/>
+        <field name="propFor">boys</field>
+        <field name="active">True</field>
+        <field name="propRoomsNumber">4</field>
+        <field name="propFloors">2</field>
+        <field name="propEachRoomSharing">2</field>
+    </record>
+    <record id="acom_property_2" model="acom.property.model">
+        <field name="name">London House</field>
+        <field name="propAddress">Shiv apartment, Chorpai road, Delhi</field>
+        <field name="propPostcode">54321</field>
+        <field name="propLocation_id" ref="acom_location_5"/>
+        <field name="propFor">boys</field>
+        <field name="active">True</field>
+        <field name="propRoomsNumber">6</field>
+        <field name="propFloors">2</field>
+        <field name="propEachRoomSharing">3</field>
+    </record>
+    <record id="acom_property_3" model="acom.property.model">
+        <field name="name">Hancock House</field>
+        <field name="propAddress">KK nagar apartment 2, sabarmati, Ahmedabad</field>
+        <field name="propPostcode">121212</field>
+        <field name="propLocation_id" ref="acom_location_0"/>
+        <field name="propFor">girls</field>
+        <field name="active">True</field>
+        <field name="propRoomsNumber">6</field>
+        <field name="propFloors">2</field>
+        <field name="propEachRoomSharing">2</field>
+    </record>
+    
+</odoo>
