@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data noupdate="1">
+    <record id="acom_location_0" model="acom.locations">
+        <field name="acom_locations">Ahmedabad</field>
+    </record>
+    <record id="acom_location_1" model="acom.locations">
+        <field name="acom_locations">Gandhinagar</field>
+    </record>
+    <record id="acom_location_2" model="acom.locations">
+        <field name="acom_locations">Mehsana</field>
+    </record>
+    <record id="acom_location_3" model="acom.locations">
+        <field name="acom_locations">Palanpur</field>
+    </record>
+    <record id="acom_location_4" model="acom.locations">
+        <field name="acom_locations">Surat</field>
+    </record>
+    <record id="acom_location_5" model="acom.locations">
+        <field name="acom_locations">Delhi</field>
+    </record>
+    <record id="acom_location_6" model="acom.locations">
+        <field name="acom_locations">Mumbai</field>
+    </record>
+</data>
