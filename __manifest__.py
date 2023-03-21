@@ -15,6 +15,7 @@
         'views/acom_properties_view.xml',
         'views/acom_rooms_view.xml',
         'views/acom_tenant_view.xml',
+        'views/res_users_views.xml',
         'views/acom_menu.xml',
         'data/master_data.xml'
     ],

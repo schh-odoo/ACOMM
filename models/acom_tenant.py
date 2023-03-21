@@ -2,7 +2,7 @@ from odoo import models,fields,api
 from dateutil.relativedelta import relativedelta
 from odoo import exceptions
 
-class AcomPropertyModel(models.Model):
+class AcomTenantModel(models.Model):
     _name="acom.tenant.model"
     _description="Table to hold tenant information"
 

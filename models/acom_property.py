@@ -9,6 +9,7 @@ class AcomPropertyModel(models.Model):
 
     name = fields.Char(required=True)
     propImg = fields.Image(string="Brand Image", max_width=150, max_height=150)
+    propManager_id=fields.Many2one('res.users', string='Manager', index=True)
     propAddress = fields.Char(required=True, string="Address")
     propLocation_id = fields.Many2one("acom.locations",required=True,string="Location")
     propPostcode = fields.Integer(required=True, string="Postcode")

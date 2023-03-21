@@ -51,6 +51,11 @@
                         </div>
                         <div style="margin-top:30px;" />
                     </div>
+                    <group>
+                        <group>
+                            <field name="propManager_id" />
+                        </group>
+                    </group>
                     <group name="main">
                         <group>
                             <field name="propAddress" />

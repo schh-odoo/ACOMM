@@ -15,7 +15,7 @@
     </record>
     <record id="acom_property_2" model="acom.property.model">
         <field name="name">London House</field>
-        <field name="propAddress">Shiv apartment, Chorpai road, Delhi</field>
+        <field name="propAddress">Shiv apartment, delhi road, Delhi</field>
         <field name="propPostcode">54321</field>
         <field name="propLocation_id" ref="acom_location_5" />
         <field name="propFor">boys</field>
