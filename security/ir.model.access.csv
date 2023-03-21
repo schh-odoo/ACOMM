@@ -1,5 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-acom.access_acom_property_model,access_acom_property_model,acom.model_acom_property_model,base.group_user,1,1,1,1
-acom.access_acom_rooms_model,access_acom_rooms_model,acom.model_acom_rooms_model,base.group_user,1,1,1,1,
-acom.access_acom_tenant_model,access_acom_tenant_model,acom.model_acom_tenant_model,base.group_user,1,1,1,1
-acom.access_acom_locations,access_acom_locations,acom.model_acom_locations,base.group_user,1,1,1,1
+acom.access_acom_property_manager,access_acom_property_model,acom.model_acom_property_model,acom.acom_group_manager,1,1,0,0
+acom.access_acom_rooms_manager,access_acom_rooms_model,acom.model_acom_rooms_model,acom.acom_group_manager,1,1,0,0
+acom.access_acom_locations_manager,access_acom_locations,acom.model_acom_locations,acom.acom_group_manager,1,0,0,0
+acom.access_acom_tenant_manager,access_acom_tenant_model,acom.model_acom_tenant_model,acom.acom_group_manager,1,1,1,0
+
+acom.access_acom_property_admin,access_acom_property_model,acom.model_acom_property_model,acom.acom_group_admin,1,1,1,1
+acom.access_acom_rooms_admin,access_acom_rooms_model,acom.model_acom_rooms_model,acom.acom_group_admin,1,1,1,1
+acom.access_acom_locations_admin,access_acom_locations,acom.model_acom_locations,acom.acom_group_admin,1,1,1,1
+acom.access_acom_tenant_admin,access_acom_tenant_model,acom.model_acom_tenant_model,acom.acom_group_admin,1,1,1,1
+

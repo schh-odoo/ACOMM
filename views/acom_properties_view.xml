@@ -24,6 +24,7 @@
                 <field name="propPostcode" optional="hide" />
                 <field name="propLocation_id" />
                 <field name="propFor" />
+                <field name="propManager_id" />
                 <field name="propOccupancy" optional="show" string="Occupied" />
                 <field name="propRentalIncome" />
                 <field name="propRoomsNumber" optional="hide" />
