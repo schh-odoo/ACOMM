@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="acom_tenant_view_form" model="ir.ui.view">
+            <field name="name">acom.tenant.from</field>
+            <field name="model">acom.tenant.model</field>
+            <field name="inherit_id" ref="acom.acom_tenant_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="before">
+                    <header>
+                        <button name="action_create_invoice" string="Generate Invoice" type="object"
+                            class="oe_highlight" />
+                    </header>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

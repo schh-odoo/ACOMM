@@ -7,6 +7,6 @@
     <record id="acom_group_admin" model="res.groups">
         <field name="name">Admin</field>
         <field name="category_id" ref="base.module_category_acom_management"/>
-        <field name="implied_ids" eval="[(4,ref('acom_group_manager'))]"/>
+        
     </record>
 </odoo>

@@ -42,6 +42,7 @@
             <form>
                 <header>
                     <field name="state" widget="statusbar" options="{'clickable':'1'}"/>
+                    
                 </header>
                 <sheet>
                     <lable for="propName" widget="ui_improvement">Property Name</lable>
