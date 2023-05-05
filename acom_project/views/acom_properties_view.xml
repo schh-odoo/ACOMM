@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="acom_tenant_view_form" model="ir.ui.view">
+            <field name="name">Properties</field>
+            <field name="model">acom.property.model</field>
+            <field name="inherit_id" ref="acom.acom_property_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='state']" position="before">
+                    <header>
+                        <button name="action_create_project" string="Create Project" type="object"
+                            class="oe_highlight" attrs="{'invisible':[('state','!=','underrennovation')]}" />
+                    </header>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
